@@ -1,6 +1,8 @@
-# fable-method
+# The Fable Workflow
 
-**A problem-solving loop for AI coding agents, with the eval that keeps it honest.**
+**How Claude Fable 5 worked, written down before it was gone. With the eval that keeps it honest.**
+
+In its final days before deprecation, Claude Fable 5 distilled its own way of approaching problems into a set of skills any model can run: classify the ask before touching anything, define done with a named verification, gather evidence in parallel from primary sources, commit to one recommendation, change the smallest correct thing, verify by observation, report the outcome first with honest caveats. Then it tested that distillation against itself, adversarially, across 159 agent runs, and kept the failures in the log.
 
 Most agent instruction files tell the model *what to value* ("be careful, verify your work"). This one tells it *what to do, in what order, with thresholds*, so a mid-tier model can follow it literally. Three skills, one philosophy: **think** (fable-method), **act** (fable-loop), **prove** (fable-judge). Every rule exists because a test failed without it; every claim below links to the committed judge transcript that backs it.
 
@@ -113,7 +115,7 @@ eval/
 
 ## Origin
 
-Distilled from working sessions with **Claude Fable 5** in its final days before deprecation, then made literal enough for any model to follow: the first draft was adversarially reviewed by three critic agents, and every rule that survived earned its place by fixing an observed failure. The method captures the structure of good agentic work, not the judgment inside each step; structure turns out to be most of it.
+This is a community distillation, not an Anthropic artifact. It came out of working sessions with **Claude Fable 5** in its final days before deprecation: the model wrote the first draft of its own method, three adversarial critic agents attacked it (weak-model usability, fidelity, bloat), and every rule that survived earned its place by fixing an observed failure in the eval rounds. Notably, the bare model itself broke one of its own written rules during testing ([round 4](eval/results/round4-cross-model.json), a scope violation) and was out-ranked by cheaper models following the written version, which is the whole thesis: the method captures the structure of good agentic work, not the judgment inside each step, and structure turns out to be most of it.
 
 ## License
 
