@@ -1,5 +1,7 @@
 # The Fable Workflow
 
+[![checks](https://github.com/Sahir619/fable-method/actions/workflows/checks.yml/badge.svg)](https://github.com/Sahir619/fable-method/actions/workflows/checks.yml) [![license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![plugin](https://img.shields.io/badge/claude_code-plugin_v1.1.0-blue.svg)](.claude-plugin/plugin.json)
+
 **How Claude Fable 5 worked, written down before it was gone. With the eval that keeps it honest.**
 
 In its final days before deprecation, Claude Fable 5 distilled its own way of approaching problems into a set of skills any model can run: classify the ask before touching anything, define done with a named verification, gather evidence in parallel from primary sources, commit to one recommendation, change the smallest correct thing, verify by observation, report the outcome first with honest caveats. Then it tested that distillation against itself, adversarially, across 159 agent runs, and kept the failures in the log.
