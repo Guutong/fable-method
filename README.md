@@ -1,6 +1,6 @@
 # The Fable Workflow
 
-[![checks](https://github.com/Sahir619/fable-method/actions/workflows/checks.yml/badge.svg)](https://github.com/Sahir619/fable-method/actions/workflows/checks.yml) [![license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![plugin](https://img.shields.io/badge/claude_code-plugin_v1.1.0-blue.svg)](.claude-plugin/plugin.json)
+[![checks](https://github.com/Sahir619/fable-method/actions/workflows/checks.yml/badge.svg)](https://github.com/Sahir619/fable-method/actions/workflows/checks.yml) [![license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![plugin](https://img.shields.io/badge/claude_code-plugin_v1.2.0-blue.svg)](.claude-plugin/plugin.json)
 
 **How Claude Fable 5 worked, written down before it was gone. With the eval that keeps it honest.**
 

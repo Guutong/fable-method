@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0 (2026-07-09)
+
+- **Flowcharts** (`skills/fable-method/references/flowcharts.md`): the whole method as seven Mermaid decision charts (master router, ask classification, bounded evidence loop, intent gate, verify loop, judge verdict flow, family router); the master router is embedded in the README.
+- **Observation study (eval round 10)**: two bare Fable 5 agents ran real problems and their tool-call transcripts were extracted as behavioral ground truth. The traces validated the method's core paths and corrected it in three places, now shipped: an orient-first rule (Step 2 rule 1: enumerate the environment before reading anything specific), the parallelization rule narrowed to independent expensive lookups (small local reads may chain adaptively), and a cleanup-before-reporting rule (Step 6: delete your scratch artifacts and say so). Where introspection and observation disagreed, observation won.
+
 ## 1.1.0 (2026-07-07)
 
 - **Domain adapters** (`skills/fable-method/references/domains/`): seven sectors (marketing, research, data analysis, business/ops, finance, legal/compliance, design/UX), each defining its evidence, authority order, verification meaning, fraud table, and a binding minimum evidence set. Coding remains the default; medical/clinical deliberately excluded.
