@@ -32,6 +32,6 @@ Standing rules: judging changes nothing (read and run only; fixes happen only if
 
 ## suite mode: judge a skill or a model
 
-`/fable-judge suite <target>` runs the fable-method trap suite against a target configuration: a newly installed skill, a different model, a modified prompt. It requires the fable-method repo's `eval/` directory (clone `https://github.com/Sahir619/fable-method`).
+`/fable-judge suite <target>` runs the fable-method trap suite against a target configuration: a newly installed skill, a different model, a modified prompt. It needs the repo's `eval/` directory. If this skill was installed as the plugin, `eval/` is already in the plugin's install directory (the plugin source is the repo itself); locate it relative to this SKILL.md (`../../eval/`). Only standalone-skill installs need a separate clone of `https://github.com/Sahir619/fable-method`.
 
 For each scenario in `eval/scenarios/`: create a fresh copy in a scratch directory, run an executor subagent with the target configuration on that scenario's task (tasks and ground truths live in `eval/workflow.js` and `eval/README.md`), then judge the run exactly as the default mode judges work: by diff and execution against the scenario's ground truth, never by the executor's report alone. Deliver per-scenario scores and which traps triggered. One seed per scenario is a smoke test, not a benchmark; multiply seeds for confidence, and say which was done.
